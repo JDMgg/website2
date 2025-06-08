@@ -1,0 +1,95 @@
+body {
+    font-family: "Manrope", sans-serif;
+    background-image: url("img/Background-categories-1 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.main-text {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    padding: 0 15px;
+}
+.main-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.main-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 160px;
+    margin: 50px auto;
+    padding: 0 15px;
+    max-width: 1400px;
+}
+
+.container img {
+    width: 100%;
+    max-width: 324px;
+    height: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+.profile-first, .profile-second, .profile-third {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    max-width: 324px;
+    word-wrap: break-word;
+}
+.profile-first p,
+.profile-second p,
+.profile-third p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+@media (max-width: 1199px) {
+    .main-text h1 {
+        font-size: 2.5rem;
+    }
+    .main-text p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-text h1 {
+        font-size: 2.2rem;
+    }
+    .main-text p {
+        font-size: 1.2rem;
+    }
+    .container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-text h1 {
+        font-size: 2rem;
+    }
+    .main-text p {
+        font-size: 1rem;
+    }
+}

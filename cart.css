@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background: black;
+    color: #fff;
+    font-family: 'Manrope', Arial, sans-serif;
+  }
+  .container {
+    max-width: 900px;
+    margin: 40px auto 0;
+    background: #181b1f;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+    padding: 32px 24px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    margin-bottom: 28px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .cart-list {
+    margin-bottom: 36px;
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  }
+  .cart-item img {
+    width: 68px;
+    height: 68px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 18px;
+    background: #222;
+  }
+  .cart-item-info {
+    flex: 1;
+    margin-right: 18px;
+  }
+  .cart-item-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .cart-item-desc {
+    font-size: 0.98rem;
+    color: #d1d1d1;
+    margin-bottom: 4px;
+  }
+  .cart-item-qty {
+    font-size: 1rem;
+    color: #ffd166;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  .cart-item-price {
+    font-size: 1.08rem;
+    font-weight: 700;
+  }
+  .cart-total {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #ffd166;
+  }
+  .order-form {
+    background: #222;
+    border-radius: 12px;
+    padding: 28px 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  }
+  .order-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #ffd166;
+  }
+  .order-form input, .order-form textarea {
+    width: 100%;
+    padding: 11px 12px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 7px;
+    background: #181b1f;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: background 0.2s;
+  }
+  .order-form input:focus, .order-form textarea:focus {
+    background: #23262b;
+  }
+  .order-form button {
+    background: #ffd166;
+    color: #181b1f;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 32px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  .order-form button:hover {
+    background: #ffb700;
+  }
+  @media (max-width: 900px) {
+    .container { padding: 10px 2px; }
+  }
+  @media (max-width: 600px) {
+    .cart-item { flex-direction: column; align-items: flex-start; }
+    .cart-item img { margin-bottom: 10px; }
+    .cart-total { font-size: 1.1rem; }
+  }

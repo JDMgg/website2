@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина замовлень</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <nav class="panel">
+            <img class="icon" src="img/icon.png" alt="icon">
+            <div class="work-time">
+                <img class="clock-icon" src="img/Clock.png" alt="clock">
+                <div class="schedule">
+                    <p class="time-schedule">11:00 - 22:00</p>
+                    <p class="text-schedule">Час роботи доставки</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="contact.html">Контактна інформація</a></li>
+            </ul>
+            <a class="cart-button" href="cart.html"><img src="img/cartbuy.png" alt="cartbuy"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Корзина замовлень</h1>
+            <div class="cart-list">
+            <div class="cart-item">
+                <img src="navi 1.png" alt="Аляска рол">
+                <div class="cart-item-info">
+                <div class="cart-item-title">Аляска рол</div>
+                <div class="cart-item-desc">Лосось, сир філадельфія, авокадо, червона ікра</div>
+                </div>
+                <div class="cart-item-qty">x2</div>
+                <div class="cart-item-price">920 ₴</div>
+            </div>
+            <div class="cart-item">
+                <img src="navi 1.png" alt="Філадельфія рол">
+                <div class="cart-item-info">
+                <div class="cart-item-title">Філадельфія рол</div>
+                <div class="cart-item-desc">Лосось, сир філадельфія, огірок</div>
+                </div>
+                <div class="cart-item-qty">x1</div>
+                <div class="cart-item-price">350 ₴</div>
+            </div>
+            </div>
+            <div class="cart-total">
+            Разом: 1 270 ₴
+            </div>
+            <form class="order-form">
+            <label for="name">Ім'я та прізвище</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required pattern="^\+?3?8?(0\d{9})$" placeholder="+38 0XX XXX XX XX">
+
+            <label for="address">Адреса доставки</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="comment">Коментар до замовлення</label>
+            <textarea id="comment" name="comment" rows="2" placeholder="Додаткові побажання..."></textarea>
+
+            <button type="submit">Оформити замовлення</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
